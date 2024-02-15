@@ -17,7 +17,7 @@ sealed class Program
     // SynchronizationContext-reliant code before AppMain is called: things aren't initialized
     // yet and stuff might break.
     public static WebClient wc = new WebClient(); 
-    public static string HostAdress = "http://5.144.96.227:5555";
+    public static string HostAdress = "http://5.144.96.227:6666";
     //public static string HostAdress = "http://localhost:5269";
     public static System.Timers.Timer timer = new System.Timers.Timer();
 
