@@ -1,0 +1,8 @@
+<resources>
+    <style name="Button" parent="Theme.AppCompat">
+        <item name="android:backgroundTint">@color/buttonBackground</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">7pt</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

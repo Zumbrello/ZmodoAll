@@ -1,0 +1,96 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             
+             mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="450"
+             x:Class="GameLibDesktop.Views.UserControls.AddGameUC">
+    
+    <StackPanel>
+        <ScrollViewer>
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                    <TextBlock Text="Название: " FontSize="20" FontWeight="Bold" Width="200"
+                               Foreground="Red" VerticalAlignment="Center" Margin="20 0 0 0"
+                               HorizontalAlignment="Left" TextWrapping="Wrap"/>
+                    <TextBox Watermark="Название" FontSize="10" FontWeight="Bold" Width="450"
+                             Foreground="White" VerticalAlignment="Stretch" Margin="20 10 20 10" 
+                             TextWrapping="Wrap" Name="TitleTB" HorizontalAlignment="Stretch"/>
+                </StackPanel>
+                   <StackPanel  Orientation="Horizontal" HorizontalAlignment="Stretch">
+                       <TextBlock Text="Разработчик: " FontSize="20" FontWeight="Bold" Width="200"
+                                  Foreground="Red" VerticalAlignment="Center" Margin="20 0 0 0"
+                                  HorizontalAlignment="Left" TextWrapping="Wrap"/>
+                       <ComboBox FontSize="10" FontWeight="Bold" HorizontalAlignment="Stretch"
+                                 Foreground="White" VerticalAlignment="Stretch" Margin="20 10 20 10"
+                                 Name="DeveloperCB" Width="450"/>
+                   </StackPanel>
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Stretch">
+                    <TextBlock Text="Издатель: " FontSize="20" FontWeight="Bold"
+                               Foreground="Red" VerticalAlignment="Center" Margin="20 0 0 0"
+                               HorizontalAlignment="Left" TextWrapping="Wrap" Width="200"/>
+                    <ComboBox FontSize="10" FontWeight="Bold" Foreground="White" VerticalAlignment="Stretch" 
+                              Margin="20 10 20 10" HorizontalAlignment="Stretch" Name="PublisherCB" Width="450"/>
+                </StackPanel>
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Stretch">
+                    <TextBlock Text="Мин.требования: " Width="200" FontSize="20" FontWeight="Bold"
+                               Foreground="Red" VerticalAlignment="Center" Margin="20 0 0 0"
+                               HorizontalAlignment="Left" TextWrapping="Wrap"/>
+                    <TextBox FontSize="10" FontWeight="Bold"
+                             Foreground="White" VerticalAlignment="Stretch" Margin="20 10 20 10" TextWrapping="Wrap"  
+                             Name="MinReqTB" Width="450"/>
+                    
+                </StackPanel>
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Stretch">
+                    <TextBlock Text="Макс.требования: " FontSize="20" Width="200" FontWeight="Bold"
+                               Foreground="Red" VerticalAlignment="Center" Margin="20 0 0 0"
+                               HorizontalAlignment="Left" TextWrapping="Wrap"/>
+                    <TextBox FontSize="10" FontWeight="Bold"
+                             Foreground="White" VerticalAlignment="Stretch" Margin="20 10 20 10" TextWrapping="Wrap"  
+                             Width="450" Name="MaxReqTB"/>
+                </StackPanel>
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Stretch">
+                    <TextBlock Text="Дата выхода: " Width="200" FontSize="20" FontWeight="Bold"
+                               Foreground="Red" VerticalAlignment="Center" Margin="20 0 0 0"
+                               HorizontalAlignment="Left" TextWrapping="Wrap"/>
+                    <TextBox Watermark="30.12.2000" FontSize="10" FontWeight="Bold"
+                             Foreground="White" VerticalAlignment="Stretch" Margin="20 10 20 10" TextWrapping="Wrap" 
+                             Width="450" Name="ReleaseDateTB"/>
+                </StackPanel>
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Stretch">
+                    <TextBlock Text="Изображение: " Width="200" FontSize="20" FontWeight="Bold"
+                               Foreground="Red" VerticalAlignment="Center" Margin="20 0 0 0"
+                               HorizontalAlignment="Left" TextWrapping="Wrap"/>
+                    <TextBox Watermark="Url изображения" FontSize="10" FontWeight="Bold"
+                             Foreground="White" VerticalAlignment="Stretch" Margin="20 10 20 10" TextWrapping="Wrap" 
+                             Width="450" Name="ImageUrlTB"/>
+                    
+                </StackPanel>
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Stretch">
+                    <TextBlock Text="Описание: " FontSize="20" Width="200" FontWeight="Bold"
+                               Foreground="Red" VerticalAlignment="Center" Margin="20 0 0 0"
+                               HorizontalAlignment="Left" TextWrapping="Wrap"/>
+                    <TextBox Watermark="Описание" FontSize="10" FontWeight="Bold"
+                             Foreground="White" VerticalAlignment="Stretch" Margin="20 10 20 10" TextWrapping="Wrap" 
+                             Width="450" ScrollViewer.HorizontalScrollBarVisibility="Auto" Name="DescriptionTB"/>
+                </StackPanel>
+                
+                <TextBlock Margin="0 20 0 0" TextAlignment="Center" Foreground="Red" 
+                           FontSize="20" FontWeight="Bold" Name="StatusText"/>
+            </StackPanel>
+        </ScrollViewer>
+        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Width="500" Height="50">
+            
+            <Button Content="Добавить" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" Click="AddGame_OnClick" Margin="0 0 25 0"  Name="AddGameBtn"/> 
+                
+            <Button Content="Изменить" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" Click="ChangeGame_OnClick" Margin="0 0 25 0" Name="ChangeGameBtn"/> 
+                
+            <Button Content="Удалить" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                    Click="DeleteGame_OnClick" Margin="0 0 25 0" Name="DeleteGameBtn"/> 
+            
+        </StackPanel>
+    </StackPanel>
+</UserControl>

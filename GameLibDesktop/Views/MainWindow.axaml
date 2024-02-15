@@ -1,0 +1,44 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:userControls="clr-namespace:GameLibDesktop.Views.UserControls"
+        mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="550"
+        MinHeight="768"
+        MinWidth="1366"
+        x:Class="GameLibDesktop.Views.MainWindow"
+        Icon="/Assets/logo.png"
+        Title="Zmodo"
+        Background="Black"
+        Foreground="Red">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>   
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Image Grid.Row="0" Grid.Column="0"
+               Source="/Assets/logo.png"
+               HorizontalAlignment="Left"/>
+        
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="Zmodo" Foreground="Red"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="40" FontWeight="Bold"></TextBlock>
+        
+        <ContentControl Grid.Row="1" Grid.RowSpan="2" Grid.Column="0"
+                        Margin="0 20 0 0" Name="MenuCC">
+            
+        </ContentControl>
+        
+        <ContentControl Grid.Row="1" Grid.RowSpan="2" Grid.Column="1"
+                        Name="ContentCC">
+        </ContentControl>
+        
+    </Grid>
+</Window>

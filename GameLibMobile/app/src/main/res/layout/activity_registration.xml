@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Регистрация"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="14pt"
+        android:textColor="@color/textColor"/>
+
+    <EditText
+        android:id="@+id/loginEdit"
+        android:layout_width="650px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60px"
+        android:hint="Логин"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:background="@color/buttonBackground"/>
+
+    <EditText
+        android:id="@+id/emailEdit"
+        android:layout_width="650px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:hint="Почта"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:background="@color/buttonBackground"/>
+
+    <EditText
+        android:id="@+id/passwordEdit"
+        android:layout_width="650px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:background="@color/buttonBackground"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Поля заполненены не корректно"
+        android:textSize="12pt"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:id="@+id/warningTV"/>
+
+    <Button
+        style="@style/Button"
+        android:id="@+id/registerBtn"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:text="Зарегистрироваться"/>
+
+    <Button
+        style="@style/Button"
+        android:id="@+id/exitBtn"
+        android:layout_width="156dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:text="Закрыть"/>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40px"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Личный кабинет"
+        android:layout_gravity="center"/>
+
+
+    <Button
+        android:id="@+id/menuBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Показать меню"
+        android:layout_marginBottom="20dp"
+        style="@style/Button"/>
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:textSize="10pt"
+        android:layout_marginLeft="20px"
+        android:textStyle="bold"
+        android:text="LoginUser"
+        android:textColor="@color/textColor"/>
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100px"
+        android:textSize="10pt"
+        android:layout_marginLeft="20px"
+        android:textStyle="bold"
+        android:text="EmailUser"
+        android:textColor="@color/textColor"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Редактировать"
+        android:layout_gravity="center"
+        android:layout_marginRight="40px"
+        android:id="@+id/changeBtn"
+        style="@style/Button"/>
+
+</LinearLayout>
